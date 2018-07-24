@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('car', CarController::class);
+Route::get('pa', 'CarController@pa');
